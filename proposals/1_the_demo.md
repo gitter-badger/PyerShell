@@ -16,6 +16,7 @@ PyerShell development follows the following ideology:
 - Code without test is not good code.
 - Detail documentation is helpful to everyone.
 - Typing helps us code, therefore type hinting is **required** unless it is too complicated.
+- Uses keyword to represent parameter, unless it is nesscary to use positional.
 
 ### Software Name 
 
