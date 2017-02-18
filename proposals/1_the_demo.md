@@ -9,6 +9,20 @@ This proposal focus on the ideology and the core functionalities of `PyerShell` 
 `PyerShell` is inspired from [PowerShell](https://github.com/PowerShell/PowerShell),
 aiming to bring strong type to the world of shell with the power of python.
 
+### Development
+
+PyerShell development follows the following ideology:
+- Open Source can benefit both the user, the developer and the contributor.
+- Code without test is not good code.
+- Detail documentation helps everyone.
+
+
+### Software Name 
+
+`PyerShell` can be interpreted in the following 2 ways:
+- Make your shell more python like.
+- A name derived from PowerShell.
+
 ## Core Functionalities
 
 ### Usage
