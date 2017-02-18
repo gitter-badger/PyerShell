@@ -14,8 +14,8 @@ aiming to bring strong type to the world of shell with the power of python.
 PyerShell development follows the following ideology:
 - Open Source can benefit both the user, the developer and the contributor.
 - Code without test is not good code.
-- Detail documentation helps everyone.
-
+- Detail documentation is helpful to everyone.
+- Typing helps us code, therefore type hinting is **required** unless it is too complicated.
 
 ### Software Name 
 
