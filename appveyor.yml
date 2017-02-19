@@ -16,7 +16,7 @@ environment:
 
 install:
   # We need wheel installed to build wheels
-  - "%PYTHON%\\python.exe -r requirement.txt"
+  - "%PYTHON%\\python.exe -r .\requirement.txt"
 
 build: off
 
