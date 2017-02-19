@@ -18,7 +18,7 @@ def to_bash_str(python_object: object) -> str:
 
         return '"{0}"'.format(python_object)
 
-    elif isinstance(python_object, None):
+    elif isinstance(python_object, type(None)):
         # returns empty string if it is a none type
 
         return ""
