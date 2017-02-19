@@ -9,13 +9,16 @@ def to_bash_str(python_object: object) -> str:
 
     if isinstance(python_object, list):
         # if it is a list, join them via space
-        return " ".join(to_bash_str(python_object))
+
+        return " ".join([to_bash_str(element) for element in python_object])
 
     elif isinstance(python_object, str):
         # if the object is an string
         # wrap it with quotes
+
         return '"{0}"'.format(python_object)
 
     else:
         # else simply return the str
+
         return str(python_object)
