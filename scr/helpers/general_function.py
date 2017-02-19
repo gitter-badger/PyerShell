@@ -16,7 +16,6 @@ def to_bash_str(python_object: object) -> str:
         # wrap it with quotes
         return '"{0}"'.format(python_object)
 
-
     else:
         # else simply return the str
         return str(python_object)
