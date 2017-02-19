@@ -27,8 +27,6 @@ class ParseFailure:
         self.failure_message = failure_message
 
 
-# this is the named tuple that keeps track of all the embedded statement in a statement
-# notice, pipline is also handled by
 class EmbeddedStructure:
     def __init__(self, embedded_str: str, embedded_value: object):
         """
