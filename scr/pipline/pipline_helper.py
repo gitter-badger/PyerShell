@@ -1,5 +1,4 @@
-
-def get_pipline_para_name(command:str, get_long:bool = True) -> (str, bool):
+def get_pipline_para_name(command: str, get_long: bool = True) -> (str, bool):
 
     """
     This is a template for the function
