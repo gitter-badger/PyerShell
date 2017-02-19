@@ -42,7 +42,7 @@ def not_in_string_context(substring: str, statement_string: str) -> bool:
               2. the substring exists in a string context
     """
     # this is the regex to match a string in a statement string
-    string_regex = '(?<!\\)\".*?(?<!\\)\"'
+    string_regex = r'(?<!\\)[\"\'].*?(?<!\\)[\"\']'
 
     # remove all the strings in statement_string
     clean_statement_strings = re.sub(pattern=string_regex, repl="", string=statement_string)
