@@ -29,19 +29,31 @@ class TestToBashStr:
 
 class TestNotStrContext:
     def test_simple_string(self):
-        assert not gf.not_in_string_context(substring="te", statement_string='"test" this')
+        assert not gf.not_in_string_context(
+            substring="te",
+            statement_string='"test" this')
 
     def test_simple_non_string(self):
-        assert gf.not_in_string_context(substring="te", statement_string='test "this"')
+        assert gf.not_in_string_context(
+            substring="te",
+            statement_string='test "this"')
 
     def test_between_two_string(self):
-        assert gf.not_in_string_context(substring="te", statement_string='"that" test "this"')
+        assert gf.not_in_string_context(
+            substring="te",
+            statement_string='"that" test "this"')
 
     def test_escape(self):
-        assert gf.not_in_string_context(substring="te", statement_string='"that" \\"test\\" "this"')
+        assert gf.not_in_string_context(
+            substring="te",
+            statement_string='"that" \\"test\\" "this"')
 
     def test_single_quotes(self):
-        assert not gf.not_in_string_context(substring="te", statement_string="'test' this")
+        assert not gf.not_in_string_context(
+            substring="te",
+            statement_string="'test' this")
 
     def test_mixed_double_single(self):
-        assert gf.not_in_string_context(substring="ha", statement_string="'this' \' \" ha \" \' \"that\" ")
+        assert gf.not_in_string_context(
+            substring="ha",
+            statement_string="'this' \' \" ha \" \' \"that\" ")
